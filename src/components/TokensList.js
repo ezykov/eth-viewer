@@ -6,7 +6,7 @@ class TokensList extends React.PureComponent {
     const tokenItems = tokens.map((item, index) => 
       <tr key={item.uid}>
         <th>{index + 1}</th>
-        <td>{item.token_address}</td>
+        <td><b>{item.name}</b> (contract address: {item.token_address})</td>
         <td>{item.value}</td>
       </tr>
     );
